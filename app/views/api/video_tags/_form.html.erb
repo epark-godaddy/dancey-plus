@@ -1,0 +1,27 @@
+<%= form_with(model: video_tag, local: true) do |form| %>
+  <% if video_tag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(video_tag.errors.count, "error") %> prohibited this video_tag from being saved:</h2>
+
+      <ul>
+      <% video_tag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :video_id %>
+    <%= form.text_field :video_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tag_id %>
+    <%= form.text_field :tag_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -14,6 +14,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import SplashContainer from "./splash/splash_container";
 import './app.scss'
+import HomeContainer from "./home/home_container";
 
 const App = () => (
   <div>
@@ -21,9 +22,8 @@ const App = () => (
     <Switch>
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      {/* <Route exact path="/benches/new" component={BenchFormContainer} />
-      <Route path="/benches/:benchId" component={BenchShowContainer} /> */}
       <AuthRoute exact path="/" component={SplashContainer} />
+      <ProtectedRoute path="/home" component={HomeContainer} />
     </Switch>
   </div>
 );

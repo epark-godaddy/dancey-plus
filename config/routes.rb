@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  resources :tags
-  resources :videos
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: "static_pages#root"
   namespace :api, defaults: {format: :json} do
     resource :user, only: [:create, :show]
     resource :session, only: [:create, :destroy]
+    
+    resources :user_saved_videos
+    resources :video_tags
+    resources :tags
+    resources :videos
   end
 
 end
