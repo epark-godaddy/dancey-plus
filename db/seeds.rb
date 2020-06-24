@@ -7,3 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create([{email: 'demo@gmail.com', password: 'password'}])
+# create all the tags
+Tag.create([{name: 'hip hop'}])
+

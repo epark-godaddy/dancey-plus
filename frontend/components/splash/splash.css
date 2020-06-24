@@ -17,7 +17,7 @@
   padding-left: 110px;
 }
 
-.btn-primary{
+button.btn-primary{
   color: rgb(249, 249, 249);
   font-size: 15px;
   text-transform: uppercase;
@@ -44,7 +44,7 @@
   border-color: initial;
   border-image: initial;
   border-radius: 4px;
-  padding: 0px 24px;
+  padding: 15px 24px;
   overflow: hidden;
   transition: all 0.2s ease-in-out 0s;
   width: inherit;
@@ -66,14 +66,15 @@
   padding: 0px;
   text-decoration: underline;
   padding-left: 70px;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .login-content {
   margin: 30px;
 }
 
-.login-button {
+button.login-button {
+  background-color: rgba(0, 0, 0, 0.6);
   font-family: Avenir-Heavy, sans-serif;
   margin: 5px;
 }
