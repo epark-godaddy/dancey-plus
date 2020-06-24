@@ -1,0 +1,39 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+.app-background {
+  background-color: rgb(26, 29, 41);
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  width: 100%;
+  z-index: -3;
+  transition: opacity 200ms ease 0s;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  height: 40px;
+  max-width: max-content;
+  width: auto;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px 16px;
+  border: 1px solid white;
+}
+
+.btn-secondary:hover {
+  color: black;
+  background-color: white;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}

@@ -6,7 +6,9 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
@@ -38,5 +40,15 @@
   "bugs": {
     "url": "https://github.com/ElishaPark/dancey-plus/issues"
   },
-  "homepage": "https://github.com/ElishaPark/dancey-plus#readme"
+  "homepage": "https://github.com/ElishaPark/dancey-plus#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.3",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "sass": "^1.26.9",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1"
+  }
 }

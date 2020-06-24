@@ -1,5 +1,6 @@
 import React from 'react';
-
+import './session.scss'
+import logo from '../../assets/logo.png'
 
 class SessionForm extends React.Component { 
   constructor(props) { 
@@ -25,25 +26,36 @@ class SessionForm extends React.Component {
   render() { 
     const isSignUpForm = this.props.formType === 'Sign Up'
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          {isSignUpForm && <div>Sign up with your email</div>}
-          {!isSignUpForm && <div>Log in with your email</div>}
-          <input
-            type="text"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.update('email')}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.update('password')}
-          />
-          <input type="submit" value="CONTINUE"/>
-        </form>
-        {this.props.navLink}
+      <div className="row justify-content-center d-flex">
+        <div className="session-content-container flex-column align-items-center d-flex">
+          <img className="session-logo" src={logo} alt="logo" />
+          <form onSubmit={this.handleSubmit}>
+            {isSignUpForm && <div className="text">Sign up with your email</div>}
+            {!isSignUpForm && <div className="text">Log in with your email</div>}
+            <div className="input-fields">
+              <input className="text-input"
+                type="text"
+                placeholder="Email"
+                value={this.state.email}
+                onChange={this.update('email')}
+              />
+              <input className="text-input"
+                type="password"
+                placeholder="Password"
+                value={this.state.password}
+                onChange={this.update('password')}
+              />
+              <div className="text-danger">
+                {this.props.errors.join(' ')}
+              </div>
+              <input className="btn btn-primary session-submit" type="submit" value="CONTINUE" />
+            </div>
+          
+          </form>
+          <div className="align-self-start reroute-message">
+            {this.props.navLink}
+          </div>
+        </div>
       </div>
     )
   }

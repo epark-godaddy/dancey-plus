@@ -11,18 +11,19 @@ import Splash from './splash/splash'
 import SignUpFormContainer from '../components/session_form/sign_up_form_container';
 import LogInFormContainer from '../components/session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import SplashContainer from "./splash/splash_container";
+import './app.scss'
 
 const App = () => (
   <div>
-    <h1>Dancey+</h1>
-
+    <div className="app-background"></div>
     <Switch>
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
       {/* <Route exact path="/benches/new" component={BenchFormContainer} />
       <Route path="/benches/:benchId" component={BenchShowContainer} /> */}
-      <Route exact path="/" component={Splash} />
+      <AuthRoute exact path="/" component={SplashContainer} />
     </Switch>
   </div>
 );
