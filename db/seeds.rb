@@ -31,3 +31,4 @@ Tag.create([{name: 'miscl'}])
   video.tags << hip_hop_tag
   video.save
 end
+
