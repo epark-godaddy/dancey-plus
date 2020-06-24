@@ -22,7 +22,7 @@ class Splash extends React.Component {
             <img className="logo"src={logo} alt="logo"/>
             <button onClick={this.goToPage('/signup')} className="btn btn-primary">GET ALL THREE FOR $12.99/MONTH</button>
             <br/>
-            <button onClick={this.goToPage('/signup')} className="subscribe-button">or Subscribe to just Disney+ for $6.99/month or $69.99/year</button>
+            <button onClick={this.goToPage('/signup')} className="subscribe-button">or Subscribe to just Dancey+ for $6.99/month or $69.99/year</button>
           </div>
         </div>
 
