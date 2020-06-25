@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../../../app/assets/images/logo.png'
-import './splash.css';
-import backgroundImg from '../../assets/background-img.jpeg'
+// import backgroundImg from '../../assets/background-img.jpeg'
 
 class Splash extends React.Component { 
   constructor(props) { 
