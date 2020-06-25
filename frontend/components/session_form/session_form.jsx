@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class SessionForm extends React.Component {
     return (
       <div className='session-container'>
         <div className="session-content-container">
-          <div className='logo'></div>
+          <Link to="/" className="logo"></Link>
           <form onSubmit={this.handleSubmit}>
             {isSignUpForm && <div className="text">Sign up with your email</div>}
             {!isSignUpForm && <div className="text">Log in with your email</div>}

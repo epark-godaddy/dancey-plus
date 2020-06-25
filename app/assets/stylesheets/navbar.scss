@@ -1,0 +1,47 @@
+@import 'variables';
+
+.nav-bar-container {
+  display: flex;
+  height: 76px;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-bar-links-container {
+    display: flex;
+    font-family: $font-family-heavy; 
+    align-items: center; 
+    font-stretch: normal;
+    letter-spacing: 1.42px;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .link {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+
+  .logo {
+    background-size: contain;
+    background-image: image_url('logo.png');
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 70px;
+    margin-right: 50px;
+  
+  }
+
+  .logout-button {
+    justify-self: right;
+  }
+}
