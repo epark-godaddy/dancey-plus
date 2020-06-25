@@ -1,6 +1,6 @@
 import React from 'react';
-import './session.scss'
-import logo from '../../assets/logo.png'
+// import './session.scss'
+// import logo from '../../assets/logo.png'
 
 class SessionForm extends React.Component { 
   constructor(props) { 
@@ -28,7 +28,7 @@ class SessionForm extends React.Component {
     return (
       <div className="row justify-content-center d-flex">
         <div className="session-content-container flex-column align-items-center d-flex">
-          <img className="session-logo" src={logo} alt="logo" />
+          {/* <img className="session-logo" src={logo} alt="logo" /> */}
           <form onSubmit={this.handleSubmit}>
             {isSignUpForm && <div className="text">Sign up with your email</div>}
             {!isSignUpForm && <div className="text">Log in with your email</div>}

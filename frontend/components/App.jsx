@@ -13,7 +13,7 @@ import LogInFormContainer from '../components/session_form/login_form_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import SplashContainer from "./splash/splash_container";
-import './app.scss'
+
 import HomeContainer from "./home/home_container";
 
 const App = () => (
