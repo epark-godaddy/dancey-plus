@@ -1,0 +1,63 @@
+.splash-container {
+  background-image: image_url('background-img.jpeg');
+  background-size: cover;
+  height: calc(100vh - 30px);
+  background-repeat: no-repeat;
+  display: flex;
+
+  .spash-container-left {
+    width:50%;
+    display: flex;
+    justify-content: center;
+
+    .signup-content {
+      align-self: center;
+      transition: width .2s ease;
+      margin: auto;
+      width: 100%;
+      width: 600px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .subscribe-button{
+      background-color: transparent;
+      color: rgb(202, 202, 202);
+      cursor: pointer;
+      display: inline;
+      font-size: 16px;
+      font-family: Avenir-Roman;
+      text-transform: none;
+      border-style: none;
+      padding: 0px;
+      text-decoration: underline;
+      padding-top: 15px;
+    }
+
+    .logo {
+      background-size: contain;
+      background-image: image_url('logo.png');
+      background-repeat: no-repeat;
+      width:50%;
+      height: 200px;
+    }
+    
+    .btn-primary {
+      width: 80%;
+    }
+  }
+
+  .spash-container-right {
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login-content {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

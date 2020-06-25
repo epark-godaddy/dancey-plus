@@ -14,21 +14,19 @@ class Splash extends React.Component {
 
   render() {
     return (
-      <div className="row align-items-center splash-container">
-        <div className="col-6">
+      <div className="splash-container">
+        <div className="spash-container-left">
           <div className="signup-content">
-            {/* <img className="logo"src={logo} alt="logo"/> */}
-            <button onClick={this.goToPage('/signup')} className="btn btn-primary">GET ALL THREE FOR $12.99/MONTH</button>
-            <br/>
+            <div className='logo'></div>
+            <button onClick={this.goToPage('/signup')} className="btn-primary">GET ALL THREE FOR $12.99/MONTH</button>
             <button onClick={this.goToPage('/signup')} className="subscribe-button">or Subscribe to just Dancey+ for $6.99/month or $69.99/year</button>
           </div>
         </div>
 
-        <div className="col-6 d-flex justify-content-end align-self-start">
+        <div className="spash-container-right">
           <div className="login-content">
-            <button onClick={this.goToPage('/login')} className="btn btn-secondary login-button">LOG IN</button>
-            <br />
-            <button onClick={this.props.login} className="btn btn-secondary login-button">LOG IN AS DEMO USER</button>
+            <button onClick={this.goToPage('/login')} className="btn-secondary">LOG IN</button>
+            <button onClick={this.props.login} className="btn-secondary">LOG IN AS DEMO USER</button>
           </div>
         </div>
       </div>

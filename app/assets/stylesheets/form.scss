@@ -1,0 +1,29 @@
+@import 'variables';
+
+.text-input {
+  margin-top: 25px;
+  backdrop-filter: blur(50px);
+  background-color: rgb(49, 52, 62);
+  caret-color: rgb(2, 231, 245);
+  color: rgb(249, 249, 249);
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  height: 48px;
+  letter-spacing: normal;
+  line-height: 1.53;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 4px;
+  outline: none;
+  padding: 7px 12px;
+  transition: all 0.1s ease 0s;
+  font-family: $font-family;
+}
+
+.text-danger {
+  color: #ff554c;
+}

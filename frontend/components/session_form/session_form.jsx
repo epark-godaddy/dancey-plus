@@ -2,8 +2,8 @@ import React from 'react';
 // import './session.scss'
 // import logo from '../../assets/logo.png'
 
-class SessionForm extends React.Component { 
-  constructor(props) { 
+class SessionForm extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
       email: '',
@@ -15,20 +15,20 @@ class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.action({...this.state});
+    this.props.action({ ...this.state });
   }
-  update(field) { 
-    return e => { 
-      this.setState({[field]: e.currentTarget.value})
-    }
+  update(field) {
+    return e => {
+      this.setState({ [field]: e.currentTarget.value });
+    };
   }
 
-  render() { 
-    const isSignUpForm = this.props.formType === 'Sign Up'
+  render() {
+    const isSignUpForm = this.props.formType === 'Sign Up';
     return (
-      <div className="row justify-content-center d-flex">
-        <div className="session-content-container flex-column align-items-center d-flex">
-          {/* <img className="session-logo" src={logo} alt="logo" /> */}
+      <div className='session-container'>
+        <div className="session-content-container">
+          <div className='logo'></div>
           <form onSubmit={this.handleSubmit}>
             {isSignUpForm && <div className="text">Sign up with your email</div>}
             {!isSignUpForm && <div className="text">Log in with your email</div>}
@@ -48,16 +48,16 @@ class SessionForm extends React.Component {
               <div className="text-danger">
                 {this.props.errors.join(' ')}
               </div>
-              <input className="btn btn-primary session-submit" type="submit" value="CONTINUE" />
+              <input className="btn-primary session-submit" type="submit" value="CONTINUE" />
             </div>
-          
+
+            <div className="reroute-message">
+              {this.props.navLink}
+            </div>
           </form>
-          <div className="align-self-start reroute-message">
-            {this.props.navLink}
-          </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

@@ -1,0 +1,54 @@
+  @import "variables";
+
+  @mixin btn {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: Avenir-Heavy, sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    background: $primary;
+    border-style: none;
+    border-radius: 4px;
+    padding: 15px 24px;
+    transition: all 0.2s ease-in-out 0s;
+}
+  
+.btn-primary{
+  @include btn;
+}
+
+.btn-primary:hover {
+  background-color: $primary-hover;
+}
+
+.btn-secondary {
+  @include btn;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: Avenir-Heavy, sans-serif;
+  margin: 5px;
+  height: 40px;
+  max-width: max-content;
+  width: auto;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px 16px;
+  border: 1px solid white;
+}
+
+.btn-secondary:hover {
+  color: black;
+  background-color: white;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border: 1px solid white;
+}
