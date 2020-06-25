@@ -1,4 +1,5 @@
 import React from 'react';
+import TagCarouselContainer from '../tag_carousel/tag_carousel_container';
 
 class Home extends React.Component {
   componentDidMount() {
@@ -10,15 +11,15 @@ class Home extends React.Component {
     if (!this.props.tags) return <div>no tags</div>;
     if (!this.props.videos) return <div>no videos</div>;
     return (<div>
-      
+
       {/* <div>tags should be rendered here</div> */}
-      {this.props.tags.map(tag => (<TagCarouselContainer tag={tag}/>))}
+      {this.props.tags.map(tag => (<TagCarouselContainer key={tag.id} tag={tag} />))}
       {/* {this.props.tags.map(tag => (<div key={tag.id}>{tag.name}</div>))} */}
       {/* <div>videos should be rendered here</div>
       {this.props.videos.map(video => (<div key={video.id}>{video.title}</div>))}
       <div>video tags should be rendered here</div>
       {this.props.videoTags.map(videoTag => (<div key={videoTag.id}>{videoTag.id}</div>))} */}
-    </div>)
+    </div>);
   }
 }
 

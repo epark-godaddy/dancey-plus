@@ -1,6 +1,5 @@
 import React from 'react';
-// import './session.scss'
-// import logo from '../../assets/logo.png'
+
 
 class SessionForm extends React.Component {
   constructor(props) {
