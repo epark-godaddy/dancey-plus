@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../../../app/assets/images/logo.png'
+// import logo from '../../../app/assets/images/logo.png'
 
 class Splash extends React.Component { 
   constructor(props) { 
     super(props);
   }
 
-  goToPage(path) { 
+  goToPage(path) {
     return () => { 
       this.props.history.push(path);
     }   
@@ -17,7 +17,7 @@ class Splash extends React.Component {
       <div className="row align-items-center splash-container">
         <div className="col-6">
           <div className="signup-content">
-            <img className="logo"src={logo} alt="logo"/>
+            {/* <img className="logo"src={logo} alt="logo"/> */}
             <button onClick={this.goToPage('/signup')} className="btn btn-primary">GET ALL THREE FOR $12.99/MONTH</button>
             <br/>
             <button onClick={this.goToPage('/signup')} className="subscribe-button">or Subscribe to just Dancey+ for $6.99/month or $69.99/year</button>
