@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logo.png'
+import logo from '../../../app/assets/images/logo.png'
 import './splash.css';
 import backgroundImg from '../../assets/background-img.jpeg'
 

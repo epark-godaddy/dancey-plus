@@ -1,5 +1,5 @@
 .splash-container {
-  background-image: url('../../assets/background-img.jpeg');
+  background-image: image_url('background-img.jpeg');
   background-size: cover;
   height: calc(100vh - 30px);
   background-repeat: no-repeat;
