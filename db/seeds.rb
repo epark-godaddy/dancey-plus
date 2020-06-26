@@ -1,30 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 require 'open-uri'
 
 #Demo User
 User.create([{email: 'demo@gmail.com', password: 'password'}])
 
 # Tag seeds
-hip_hop_tag = Tag.create([{name: 'hip hop'}])
-Tag.create([{name: 'ballet'}])
-Tag.create([{name: 'jazz-funk'}])
-Tag.create([{name: 'tap'}])
-Tag.create([{name: 'lyrical'}])
-Tag.create([{name: 'ballroom'}])
-Tag.create([{name: 'latin'}])
-Tag.create([{name: 'movie'}])
-tutorial_tag = Tag.create([{name: 'tutorial'}])
-performance_tag = Tag.create([{name: 'performance'}])
-concept_video = Tag.create([{name: 'concept video'}])
-Tag.create([{name: 'show'}])
-class_footage_tag = Tag.create([{name: 'class footage'}])
-# Tag.create([{name: 'miscl'}])
+hip_hop_tag = Tag.create([{name: 'Hip Hop'}])
+ballet_tag = Tag.create([{name: 'Ballet'}])
+jazz_funk_tag = Tag.create([{name: 'Jazz-Funk'}])
+lyrical_tag = Tag.create([{name: 'Lyrical'}])
+ballroom_tag = Tag.create([{name: 'Latin Ballroom'}])
+
+movie_tag = Tag.create([{name: 'Movies'}])
+tutorial_tag = Tag.create([{name: 'Tutorials'}])
+performance_tag = Tag.create([{name: 'Performances'}])
+concept_video_tag = Tag.create([{name: 'Concept Videos'}])
+television_show_tag = Tag.create([{name: 'Television Shows'}])
+class_footage_tag = Tag.create([{name: 'Class Footage'}])
+
 
 #Video Seeds -- current: images
 video = Video.create(title: 'GRV 2nd Place | FRONTROW | World of Dance #WODLA 14')
@@ -32,6 +24,7 @@ file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/wod_grv.jpg')
 video.image.attach(io: file, filename:'this_videos_image.jpg')
 video.tags << hip_hop_tag
 video.tags << performance_tag
+# link: https://www.youtube.com/watch?v=32Z377LiLVU
 
 video = Video.create(title: 'TAKE ME UNDER - Sorah Yang')
 file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/sorah-yang.jpg')
