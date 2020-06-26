@@ -4,3 +4,5 @@
         json.partial! 'api/videos/video', video: video
     end
 end
+
+# { '1' : { title: 'thing', id: '1', created_at: ''} }

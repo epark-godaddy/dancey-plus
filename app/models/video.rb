@@ -20,5 +20,6 @@ class Video < ApplicationRecord
   has_many :tags, through: :video_tags
 
   has_one_attached :image 
+  has_one_attached :video 
 
 end

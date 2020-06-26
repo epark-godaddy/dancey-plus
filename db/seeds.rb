@@ -18,10 +18,12 @@ television_show_tag = Tag.create([{name: 'Television Shows'}])
 class_footage_tag = Tag.create([{name: 'Class Footage'}])
 
 
-#Video Seeds -- current: images
+#Video Seeds -- current: image, video
 video = Video.create(title: 'GRV 2nd Place | FRONTROW | World of Dance #WODLA 14')
-file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/wod_grv.jpg')
-video.image.attach(io: file, filename:'this_videos_image.jpg')
+img_file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/wod_grv.jpg')
+video_file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/grv.mp4')
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
 video.tags << hip_hop_tag
 video.tags << performance_tag
 # link: https://www.youtube.com/watch?v=32Z377LiLVU
