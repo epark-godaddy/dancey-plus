@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,15 +15,15 @@ class TagCarousel extends React.Component {
     };
     return (
       <div>
-        <h1>{this.props.tag.name}</h1>
-        <div>
-          {/* <Slider {...settings}> */}
-          {this.props.videos.map(video => (
-            <div key={video.id}>
-              {video.title}
-              <img src={video.image_url} />
-            </div>))}
-          {/* </Slider> */}
+        <div className="tag-carousel-container">
+          <h1 className="tag-name">{this.props.tag.name}</h1>
+          <div className="images-container">
+            {this.props.videos.map(video => (
+              <Link className="video-link" to={`/videos/${video.id}`}>
+                <img className="image" src={video.image_url} key={video.id} />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     );
