@@ -30,24 +30,28 @@ video = Video.create(title: 'TAKE ME UNDER - Sorah Yang')
 file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/sorah-yang.jpg')
 video.image.attach(io: file, filename:'this_videos_image.jpg')
 video.tags << hip_hop_tag
-video.tags << concept_video
+video.tags << concept_video_tag
+#link: https://www.youtube.com/watch?v=K6jNyw3rpgw
 
 video = Video.create(title: 'Roddy Ricch - "The Box" Dance Tutorial w/ Matt Steffanina')
 file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/the_box_tutorial.jpg')
 video.image.attach(io: file, filename:'this_videos_image.jpg')
 video.tags << hip_hop_tag
 video.tags << tutorial_tag
+#link: https://www.youtube.com/watch?v=znuvWedMmJ8&t=1s
 
 video = Video.create(title: 'Yung Joc - It''s Goin Down | Choreography by Willdabeast Adams | @immaspace')
 file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/wilda_going_down.jpg')
 video.image.attach(io: file, filename:'this_videos_image.jpg')
 video.tags << hip_hop_tag
 video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=9z8RONciuXw
 
 video = Video.create(title: 'KINJAZ "Fear None" | ARENA CHINA 2017')
 file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/kinjaz_fear_none.jpg')
 video.image.attach(io: file, filename:'this_videos_image.jpg')
 video.tags << hip_hop_tag
 video.tags << performance_tag
+#link: https://www.youtube.com/watch?v=pxc_igMzxXY&t=1s
 
 
