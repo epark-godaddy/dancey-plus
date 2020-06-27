@@ -19,7 +19,7 @@ class TagCarousel extends React.Component {
           <h1 className="tag-name">{this.props.tag.name}</h1>
           <div className="images-container">
             {this.props.videos.map(video => (
-              <Link className="video-link" to={`/videos/${video.id}`}>
+              <Link key={video.id} className="video-link" to={`/videos/${video.id}`}>
                 <img className="image" src={video.image_url} key={video.id} />
               </Link>
             ))}

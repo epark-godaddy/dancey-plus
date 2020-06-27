@@ -1,3 +1,40 @@
-// Place all the styles related to the videos controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'variables';
+
+.video-button{
+  visibility: hidden;
+}
+
+.video-container:hover {
+    .video-button{
+      // display: block;
+      visibility: visible;
+      opacity: 1;
+      font-family: $font-family-heavy;
+      font-size: 28px;
+      line-height: 1.4;
+      background-color: transparent;
+      color: $secondary;
+      border: none;
+      margin-top: 10px;
+      margin-left: 10px;
+      outline: none;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+}
+
+.video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+
+}
+
