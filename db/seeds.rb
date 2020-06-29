@@ -18,7 +18,7 @@ television_show_tag = Tag.create([{name: 'Television Shows'}])
 class_footage_tag = Tag.create([{name: 'Class Footage'}])
 
 
-#Video Seeds -- current: image, video
+#Video Seeds 
 video = Video.create(title: 'GRV 2nd Place | FRONTROW | World of Dance #WODLA 14')
 img_file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/wod_grv.jpg')
 video_file = open('https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/grv.mp4')
@@ -66,7 +66,7 @@ video.tags << performance_tag
 #link: https://www.youtube.com/watch?v=pxc_igMzxXY&t=1s
 
 video = Video.create(title: "[World of Dance Performance] Takes On Missy Elliott's - Work It | The Lab")
-img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/thelab_missy.jpg")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/the_lab.jpg")
 video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/%5BWorld+of+Dance+Performance%5D+Takes+On+Missy+Elliott's+-+Work+It+++The+Lab.mp4")
 video.image.attach(io: img_file, filename:'this_videos_image.jpg')
 video.video.attach(io: video_file, filename: 'this_videos_video.mp4')

@@ -39,15 +39,6 @@ class Home extends React.Component {
               src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/pixar_tag.mp4">
             </video>
           </Link>
-          <Link to="/tag/jazz-funk" className="tag-button">
-            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/jazzfunk.png" alt="Jazz-Funk" />
-            <video
-              loop className="hover-image" width="320" height="240"
-              onMouseOver={event => event.target.play()}
-              onMouseOut={event => event.target.pause()}
-              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/star_wars.mp4">
-            </video>
-          </Link>
           <Link to="/tag/latin" className="tag-button">
             <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/latin_tag.png" alt="Latin" />
             <video
@@ -55,6 +46,15 @@ class Home extends React.Component {
               onMouseOver={event => event.target.play()}
               onMouseOut={event => event.target.pause()}
               src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/marvel.mp4">
+            </video>
+          </Link>
+          <Link to="/tag/jazz-funk" className="tag-button">
+            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/jazzfunk.png" alt="Jazz-Funk" />
+            <video
+              loop className="hover-image" width="320" height="240"
+              onMouseOver={event => event.target.play()}
+              onMouseOut={event => event.target.pause()}
+              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/star_wars.mp4">
             </video>
           </Link>
           <Link to="/tag/lyrical" className="tag-button">

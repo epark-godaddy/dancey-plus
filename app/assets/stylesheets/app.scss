@@ -10,7 +10,9 @@
   z-index: -3;
   transition: opacity 200ms ease 0s;
 }
-
+.app-container {
+  padding: 0 calc(3.5vw + 24px);
+}
 body, html {
   margin: 0;
   padding: 0;

@@ -21,15 +21,17 @@ const App = () => (
     <div className="app-background"></div>
 
     <NavBarContainer />
-    <Switch>
-      <AuthRoute exact path="/login" component={LogInFormContainer} />
-      <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      <AuthRoute exact path="/" component={SplashContainer} />
-      <ProtectedRoute path="/home" component={HomeContainer} />
-      <ProtectedRoute path="/videos/:id" component={VideoContainer} />
-      <ProtectedRoute path="/search" component={SearchContainer} />
-      <ProtectedRoute path="/watchlist" component={WatchlistContainer} />
-    </Switch>
+    <div className="app-container">
+      <Switch>
+        <AuthRoute exact path="/login" component={LogInFormContainer} />
+        <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+        <AuthRoute exact path="/" component={SplashContainer} />
+        <ProtectedRoute path="/home" component={HomeContainer} />
+        <ProtectedRoute path="/videos/:id" component={VideoContainer} />
+        <ProtectedRoute path="/search" component={SearchContainer} />
+        <ProtectedRoute path="/watchlist" component={WatchlistContainer} />
+      </Switch>
+    </div>
   </div>
 );
 
