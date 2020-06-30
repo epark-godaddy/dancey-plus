@@ -15,61 +15,65 @@ class Home extends React.Component {
 
     return (
       <div>
-        <div className="featured-videos-carousel">
-          <video src={this.props.videos[1] && this.props.videos[1].video_url} autoPlay></video>
-          {/* <Link className="video-link" to={`/videos/1`}>
-            <img className="banner-image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/banner_image1.png" />
-          </Link> */}
+        <div className="video-container">
+          <div className="featured-video">
+            <video autoPlay loop src={this.props.videos[1] && this.props.videos[1].video_url + '#t=126,174'}></video>
+            <div class="video-buttons">
+              <div class="play btn-secondary">PLAY</div>
+            </div>
+          </div>
         </div>
-        <div className="tag-buttons">
-          <Link to="/tags/1" className="tag-button">
-            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/Disney+hip+hop.png" alt="Hip-Hop" />
-            <video
-              loop className="hover-image" width="320" height="240"
-              onMouseOver={event => event.target.play()}
-              onMouseOut={event => event.target.pause()}
-              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/disney_tag.mp4">
-            </video>
-          </Link>
-          <Link to="/tags/2" className="tag-button">
-            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/ballet.png" alt="Ballet" />
-            <video
-              loop className="hover-image" width="320" height="240"
-              onMouseOver={event => event.target.play()}
-              onMouseOut={event => event.target.pause()}
-              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/pixar_tag.mp4">
-            </video>
-          </Link>
-          <Link to="/tags/3" className="tag-button">
-            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/latin_tag.png" alt="Latin" />
-            <video
-              loop className="hover-image" width="320" height="240"
-              onMouseOver={event => event.target.play()}
-              onMouseOut={event => event.target.pause()}
-              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/marvel.mp4">
-            </video>
-          </Link>
-          <Link to="/tags/4" className="tag-button">
-            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/jazzfunk.png" alt="Jazz-Funk" />
-            <video
-              loop className="hover-image" width="320" height="240"
-              onMouseOver={event => event.target.play()}
-              onMouseOut={event => event.target.pause()}
-              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/star_wars.mp4">
-            </video>
-          </Link>
-          <Link to="/tags/5" className="tag-button">
-            <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/lyrical_tag.png" alt="Lyrical" />
-            <video
-              loop className="hover-image" width="320" height="240"
-              onMouseOver={event => event.target.play()}
-              onMouseOut={event => event.target.pause()}
-              src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/national_geographic.mp4">
-            </video>
-          </Link>
-        </div>
-        <div className="tags-container">
-          {this.props.tags.map(tag => (<TagCarouselContainer key={tag.id} tag={tag} />))}
+        <div className="video-links-container">
+          <div className="tag-buttons">
+            <Link to="/tags/1" className="tag-button">
+              <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/Disney+hip+hop.png" alt="Hip-Hop" />
+              <video
+                loop className="hover-image" width="320" height="240"
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.pause()}
+                src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/disney_tag.mp4">
+              </video>
+            </Link>
+            <Link to="/tags/2" className="tag-button">
+              <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/ballet.png" alt="Ballet" />
+              <video
+                loop className="hover-image" width="320" height="240"
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.pause()}
+                src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/pixar_tag.mp4">
+              </video>
+            </Link>
+            <Link to="/tags/5" className="tag-button">
+              <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/latin_tag.png" alt="Latin" />
+              <video
+                loop className="hover-image" width="320" height="240"
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.pause()}
+                src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/marvel.mp4">
+              </video>
+            </Link>
+            <Link to="/tags/3" className="tag-button">
+              <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/jazzfunk.png" alt="Jazz-Funk" />
+              <video
+                loop className="hover-image" width="320" height="240"
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.pause()}
+                src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/star_wars.mp4">
+              </video>
+            </Link>
+            <Link to="/tags/4" className="tag-button">
+              <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/lyrical_tag.png" alt="Lyrical" />
+              <video
+                loop className="hover-image" width="320" height="240"
+                onMouseOver={event => event.target.play()}
+                onMouseOut={event => event.target.pause()}
+                src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/national_geographic.mp4">
+              </video>
+            </Link>
+          </div>
+          <div className="tags-container">
+            {this.props.tags.map(tag => (<TagCarouselContainer key={tag.id} tag={tag} />))}
+          </div>
         </div>
       </div>);
   }

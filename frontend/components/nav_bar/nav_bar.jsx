@@ -10,6 +10,7 @@ class NavBar extends React.Component {
 
     return (
       <div>
+        <div className="nav-bar-spacing"></div>
         <div className="nav-bar-container">
           <div className="nav-bar-links-container">
             <Link to="/home" className="logo"></Link>
@@ -29,7 +30,13 @@ class NavBar extends React.Component {
               </svg>
               WATCHLIST</Link>
           </div>
-          <button className="logout-button btn-secondary" onClick={this.props.logOut}>LOG OUT</button>
+          <div className="drop-down">
+            <button className="my-profile btn-secondary">My Profile</button>
+            <div className="drop-down-content">
+              <button className="edit-profile btn-secondary">Edit Profile</button>
+              <button className="logout-button btn-secondary" onClick={this.props.logOut}>Log Out</button>
+            </div>
+          </div>
         </div>
       </div>
     );

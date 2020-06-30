@@ -1,5 +1,7 @@
 import { connect } from "react-redux";
 import { fetchTag } from "../../actions/tag_actions";
+import { fetchVideos } from '../../actions/video_actions';
+import { fetchVideoTags } from '../../actions/video_tag_actions';
 import Tag from './tag';
 import { getVideosFromTag } from '../../util/store_selector_util';
 
@@ -13,7 +15,9 @@ const mSTP = (state, ownProps) => ({
 });
 
 const mDTP = (dispatch) => ({
-  // fetchTag: (tagId) => dispatch(fetchTag(tagId))
+  fetchTag: (tagId) => dispatch(fetchTag(tagId)),
+  fetchVideos: () => dispatch(fetchVideos()),
+  fetchVideoTags: () => dispatch(fetchVideoTags())
 });
 
 export default connect(mSTP, mDTP)(Tag);

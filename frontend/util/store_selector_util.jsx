@@ -13,7 +13,11 @@ const getVideos = (videoIds, videos) => {
 };
 
 export const getVideosFromTag = (tag, videoTags, videos) => {
-  const videoIds = getVideoIds(tag.id, videoTags);
-  return getVideos(videoIds, videos);
+  if (!tag) {
+    return [];
+  } else {
+    const videoIds = getVideoIds(tag.id, videoTags);
+    return getVideos(videoIds, videos);
+  }
 };
 

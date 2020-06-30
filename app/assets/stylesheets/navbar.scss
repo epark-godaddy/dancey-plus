@@ -1,15 +1,24 @@
 @import 'variables';
 
+.nav-bar-spacing{
+  height: 76px;
+  background: rgb(26, 29, 41);
+  
+}
 .nav-bar-container {
   display: flex;
   height: 76px;
   padding: 10px 20px;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
-  
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(26, 29, 41);
+ 
+
   .nav-bar-links-container {
     display: flex;
     font-family: $font-family-heavy; 
@@ -44,7 +53,57 @@
   
   }
 
-  .logout-button {
+
+  .drop-down {
     justify-self: right;
+    display: inline-block;
+    // position: relative;
+    cursor: pointer;
+    border-style: none;
+    border: none;
+
   }
+  
+  .my-profile {
+    font-size: 13px;
+    border-style: none;
+    border: none;
+    background-color: rgb(26, 29, 41);
+    text-transform: capitalize;
+    font-family: $font-family;
+    &:hover{
+      color: white;
+    }
+    
+
+
+  }
+  .drop-down-content{
+    display: none;
+    background-color: rgb(26, 29, 41);
+    position: absolute;
+    z-index: 1;
+    
+    .edit-profile, .logout-button{
+      border-style: none;
+      border: none;
+      font-size: 13px;
+      background-color: rgb(26, 29, 41);
+      color: $secondary;
+      text-transform: capitalize;
+
+      &:hover {
+        color: white;
+        background-color: rgb(26, 29, 41);
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .drop-down:hover .drop-down-content {
+    display: block;
+    background-color: none;
+    color: white;
+  }
+  
 }

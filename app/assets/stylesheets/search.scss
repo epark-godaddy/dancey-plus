@@ -1,18 +1,10 @@
 @import 'variables';
 
-.explore-header{
-  font-size: 44px;
-  cursor: inherit;
-  font-family: $font-family-heavy;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 1.23;
-      padding: 65px 0px 0px;
-}
 
 .search-form {
+  // box-sizing: border-box;
   color: rgb(249, 249, 249);
+  // color: -internal-light-dark-color(rgb(170, 170, 170));
   font-family: Avenir-Heavy;
   font-size: 24px;
   height: 60px;
@@ -28,5 +20,21 @@
   border-style: none;
   border-color: initial;
   border-image: initial;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  // outline-offset: -2px;
+  // overflow: visible;
+  // transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    &:focus {
+      background: rgb(98, 102, 118);
+    }
+}
+
+.explore-header{
+  font-size: 44px;
+  cursor: inherit;
+  font-family: $font-family-heavy;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.23;
+      padding: 65px 0px 0px;
 }
