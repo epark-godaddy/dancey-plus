@@ -20,6 +20,7 @@
       outline: none;
       text-decoration: none;
       cursor: pointer;
+      margin-left: calc((3.5vw + 24px) * -1);
 
       &:hover {
         color: white;

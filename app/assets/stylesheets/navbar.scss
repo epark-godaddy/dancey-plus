@@ -6,7 +6,10 @@
   padding: 10px 20px;
   justify-content: space-between;
   align-items: center;
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
   .nav-bar-links-container {
     display: flex;
     font-family: $font-family-heavy; 

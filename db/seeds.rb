@@ -142,6 +142,16 @@ video.tags << performance_tag
 #link: https://www.youtube.com/watch?v=AxrY0CIGRjQ
 
 
+video = Video.create(title: "East Coast REMIX - A$AP Ferg Dance | Lyle Beniga Choreography | Field of Vision")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/lyle_eastcoast.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/East+Coast+REMIX+-+A%24AP+Ferg+Dance+++Lyle+Beniga+Choreography+++Field+of+Vision+++STEEZY.CO+(Adv).mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << hip_hop_tag
+video.tags << concept_video_tag
+#link: https://www.youtube.com/watch?v=AxrY0CIGRjQ
+
+
 
 
 

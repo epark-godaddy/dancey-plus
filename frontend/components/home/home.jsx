@@ -16,12 +16,13 @@ class Home extends React.Component {
     return (
       <div>
         <div className="featured-videos-carousel">
-          <Link className="video-link" to={`/videos/1`}>
+          <video src={this.props.videos[1] && this.props.videos[1].video_url} autoPlay></video>
+          {/* <Link className="video-link" to={`/videos/1`}>
             <img className="banner-image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/banner_image1.png" />
-          </Link>
+          </Link> */}
         </div>
         <div className="tag-buttons">
-          <Link to="/tag/hip-hop" className="tag-button">
+          <Link to="/tags/1" className="tag-button">
             <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/Disney+hip+hop.png" alt="Hip-Hop" />
             <video
               loop className="hover-image" width="320" height="240"
@@ -30,7 +31,7 @@ class Home extends React.Component {
               src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/disney_tag.mp4">
             </video>
           </Link>
-          <Link to="/tag/ballet" className="tag-button">
+          <Link to="/tags/2" className="tag-button">
             <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/ballet.png" alt="Ballet" />
             <video
               loop className="hover-image" width="320" height="240"
@@ -39,7 +40,7 @@ class Home extends React.Component {
               src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/pixar_tag.mp4">
             </video>
           </Link>
-          <Link to="/tag/latin" className="tag-button">
+          <Link to="/tags/3" className="tag-button">
             <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/latin_tag.png" alt="Latin" />
             <video
               loop className="hover-image" width="320" height="240"
@@ -48,7 +49,7 @@ class Home extends React.Component {
               src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/marvel.mp4">
             </video>
           </Link>
-          <Link to="/tag/jazz-funk" className="tag-button">
+          <Link to="/tags/4" className="tag-button">
             <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/jazzfunk.png" alt="Jazz-Funk" />
             <video
               loop className="hover-image" width="320" height="240"
@@ -57,7 +58,7 @@ class Home extends React.Component {
               src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/star_wars.mp4">
             </video>
           </Link>
-          <Link to="/tag/lyrical" className="tag-button">
+          <Link to="/tags/5" className="tag-button">
             <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/lyrical_tag.png" alt="Lyrical" />
             <video
               loop className="hover-image" width="320" height="240"

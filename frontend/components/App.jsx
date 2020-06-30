@@ -15,23 +15,25 @@ import HomeContainer from "./home/home_container";
 import VideoContainer from "./video/video_container";
 import SearchContainer from "./search/search_container";
 import WatchlistContainer from "./watchlist/watchlist_container";
+import TagContainer from "./tag/tag_container";
 
 const App = () => (
   <div>
     <div className="app-background"></div>
 
     <NavBarContainer />
-    <div className="app-container">
-      <Switch>
+    <Switch>
+      <AuthRoute exact path="/" component={SplashContainer} />
+      <div className="app-container">
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-        <AuthRoute exact path="/" component={SplashContainer} />
         <ProtectedRoute path="/home" component={HomeContainer} />
         <ProtectedRoute path="/videos/:id" component={VideoContainer} />
         <ProtectedRoute path="/search" component={SearchContainer} />
         <ProtectedRoute path="/watchlist" component={WatchlistContainer} />
-      </Switch>
-    </div>
+        <ProtectedRoute path="/tags/:id" component={TagContainer} />
+      </div>
+    </Switch>
   </div>
 );
 

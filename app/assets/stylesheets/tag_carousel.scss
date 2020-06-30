@@ -43,11 +43,12 @@
     width: 100%;
     // overflow-x: hidden;
     padding-top: 4px;
+    margin-left: -9px;
 
     .inner-container {
       display: flex;
       position: relative;
-      justify-content: space-between;
+      // justify-content: space-between;
       transition: left 1s ease 0s;
       // transition-property: opacity;
       // transition-duration: 0.2s;
