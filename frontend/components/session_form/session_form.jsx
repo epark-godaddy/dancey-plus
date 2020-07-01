@@ -45,7 +45,7 @@ class SessionForm extends React.Component {
                 onChange={this.update('password')}
               />
               <div className="text-danger">
-                {this.props.errors.join(' ')}
+                {this.props.errors.join('. ')}
               </div>
               <input className="btn-primary session-submit" type="submit" value="CONTINUE" />
             </div>

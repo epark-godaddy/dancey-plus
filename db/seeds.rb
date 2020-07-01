@@ -8,7 +8,7 @@ hip_hop_tag = Tag.create([{name: 'Hip Hop'}])
 ballet_tag = Tag.create([{name: 'Ballet'}])
 jazz_funk_tag = Tag.create([{name: 'Jazz-Funk'}])
 lyrical_tag = Tag.create([{name: 'Lyrical'}])
-ballroom_tag = Tag.create([{name: 'Latin'}])
+latin_tag = Tag.create([{name: 'Latin'}])
 
 movie_tag = Tag.create([{name: 'Movies'}])
 tutorial_tag = Tag.create([{name: 'Tutorials'}])
@@ -150,6 +150,82 @@ video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
 video.tags << hip_hop_tag
 video.tags << concept_video_tag
 #link: https://www.youtube.com/watch?v=AxrY0CIGRjQ
+
+video = Video.create(title: "Blake McGrath - Missing You (Official Video)")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/missingyou.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Blake+McGrath+-+Missing+You+(Official+Video).mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << lyrical_tag
+video.tags << concept_video_tag
+#link: https://www.youtube.com/watch?v=K_KcCCHCwJU
+
+
+video = Video.create(title: "James Arthur - Recovery - Janelle Ginestra x Tim Milgram")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/recovery.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/James+Arthur+-+Recovery+-+Janelle+Ginestra+x+Tim+Milgram+-+%23Dance+%23TMillyTV.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << lyrical_tag
+video.tags << concept_video_tag
+#link: https://www.youtube.com/watch?v=AxrY0CIGRjQ
+
+
+video = Video.create(title: "HARRY STYLES - Adore You | Kyle Hanagami Choreography")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/adore_you.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/HARRY+STYLES+-+Adore+You+++Kyle+Hanagami+Choreography.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << jazz_funk_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=JGXtLjvnurI
+
+
+video = Video.create(title: "Ariana Grande - thank u, next | Choreography by Jojo Gomez Ft. Sean Lew, Kaycee Rice, Montana Tucker")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/thankyounext.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Ariana+Grande+-+thank+u%2C+next+++Choreography+by+Jojo+Gomez+Ft.+Sean+Lew%2C+Kaycee+Rice%2C+Montana+Tucker.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << jazz_funk_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=B0ILbRWrnGA
+
+
+video = Video.create(title: "Ballet Class For Beginners | How To Do Simple Ballet Moves With @MissAuti")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/balletclass.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Ballet+Class+For+Beginners+++How+To+Do+Simple+Ballet+Moves+With+%40MissAuti.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << ballet_tag
+video.tags << tutorial_tag
+#link: https://www.youtube.com/watch?v=Uy67yin1ylI
+
+video = Video.create(title: "Bachata Beginner Basic Steps Tutorial - Demetrio & Nicole - Bachata Dance Academy")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/bachata.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Bachata+Beginner+Basic+Steps+Tutorial+-+Demetrio+%26+Nicole+-+Bachata+Dance+Academy.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << latin_tag
+video.tags << tutorial_tag
+#link: https://www.youtube.com/watch?v=xhrdh-uFkog
+
+video = Video.create(title: "JONAS BROTHERS - Sucker | Kyle Hanagami Choreography")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/sucker.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/JONAS+BROTHERS+-+Sucker+++Kyle+Hanagami+Choreography.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << jazz_funk_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=WkhK2XJLJis
+
+video = Video.create(title: "Magdalena, Mi Amor - DLG | Choreography with Lyrik Cruz")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/magdalena.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Magdalena%2C+Mi+Amor+-+DLG+++Choreography+with+Lyrik+Cruz.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << latin_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=qZ5O8IUTv1U
 
 
 

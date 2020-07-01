@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
 
+  goToPage(path) {
+    return () => {
+      this.props.history.push(path);
+    };
+  }
+
   render() {
     if (!this.props.loggedIn) return null;
     if (this.props.location.pathname.includes("videos")) return null;
@@ -31,9 +37,9 @@ class NavBar extends React.Component {
               WATCHLIST</Link>
           </div>
           <div className="drop-down">
-            <button className="my-profile btn-secondary">My Profile</button>
+            <button className="my-profile btn-secondary">{this.props.user.name}</button>
             <div className="drop-down-content">
-              <button className="edit-profile btn-secondary">Edit Profile</button>
+              <button className="edit-profile btn-secondary" onClick={this.goToPage("/profile")}>Edit Profile</button>
               <button className="logout-button btn-secondary" onClick={this.props.logOut}>Log Out</button>
             </div>
           </div>

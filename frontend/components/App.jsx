@@ -16,6 +16,7 @@ import VideoContainer from "./video/video_container";
 import SearchContainer from "./search/search_container";
 import WatchlistContainer from "./watchlist/watchlist_container";
 import TagContainer from "./tag/tag_container";
+import ProfileContainer from "./profile/profile_container";
 
 const App = () => (
   <div>
@@ -32,6 +33,7 @@ const App = () => (
         <ProtectedRoute path="/search" component={SearchContainer} />
         <ProtectedRoute path="/watchlist" component={WatchlistContainer} />
         <ProtectedRoute path="/tags/:id" component={TagContainer} />
+        <ProtectedRoute path="/profile" component={ProfileContainer} />
       </div>
     </Switch>
   </div>

@@ -16,7 +16,14 @@ export const logout = () => (
 export const signup = user => (
   $.ajax({
     method: 'POST',
-    url: '/api/user',
+    url: '/api/users',
+    data: { user }
+  })
+);
+export const update = user => (
+  $.ajax({
+    method: 'PATCH',
+    url: `/api/users/${user.id}`,
     data: { user }
   })
 );
