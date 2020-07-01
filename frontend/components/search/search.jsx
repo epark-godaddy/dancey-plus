@@ -49,7 +49,6 @@ class Search extends React.Component {
 
   hasTagNameThatMatchesQuery(video, query) {
     const tagNames = this.getTagNamesFromVideo(video);
-    debugger;
     return tagNames.some(tagName => tagName.toLowerCase().includes(query.toLowerCase()));
   }
 
@@ -75,7 +74,6 @@ class Search extends React.Component {
 
     return (
       <div>
-        <div className="search-container-space"></div>
         <input
           className="search-form"
           type="text"
@@ -88,6 +86,7 @@ class Search extends React.Component {
           <h1 className="explore-header">Explore</h1>
           <VideoGridContainer videos={results} />
         </div>
+        <div className="search-container-space"></div>
       </div>
     );
   }

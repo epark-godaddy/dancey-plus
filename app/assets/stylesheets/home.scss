@@ -17,7 +17,7 @@
     z-index: -2;
     position: relative;
     overflow: hidden;
-    opacity: .7;
+    opacity: .6;
   
     video {
       min-width: 100%;
@@ -39,7 +39,7 @@
     z-index: 1; 
     position: absolute;
     cursor: pointer;
-    top:55vh;
+    top:50vh;
     bottom:50vh;
     left: 50px;
     // right:0;
@@ -84,7 +84,7 @@
     z-index: 1;
     position: absolute;
     // cursor: pointer;
-    top: 25vh;
+    top: 30vh;
     bottom: 50vh;
     left: 45px;
     font-size: 40px;
