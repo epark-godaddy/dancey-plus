@@ -75,6 +75,7 @@ class Search extends React.Component {
 
     return (
       <div>
+        <div className="search-container-space"></div>
         <input
           className="search-form"
           type="text"
@@ -83,8 +84,10 @@ class Search extends React.Component {
           onChange={this.handleChange}
         />
 
-        <h1 className="explore-header">Explore</h1>
-        <VideoGridContainer videos={results} />
+        <div className="results">
+          <h1 className="explore-header">Explore</h1>
+          <VideoGridContainer videos={results} />
+        </div>
       </div>
     );
   }

@@ -1,0 +1,33 @@
+@import 'variables';
+
+.footer-container-space {
+ height:40px;
+ margin-top: 40px
+}
+.footer-container{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  margin-top: 100px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+
+  .footer-links-container {
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    font-family: $font-family-heavy; 
+    align-items: center; 
+    font-stretch: normal;
+    letter-spacing: 1.42px;
+    white-space: nowrap;
+    font-size: 13px;
+    width: 100vw;
+
+    a[href^="https"] {
+      width: 10vw;
+    }
+  }
+}

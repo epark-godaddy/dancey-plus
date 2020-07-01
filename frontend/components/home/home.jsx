@@ -40,6 +40,8 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="video-buttons-container">
+          <div className="video-title">Sorah Yang Presents: Take Me Under</div>
+          <div className="video-description">"To all the amazing, powerful, smart, creative, qualified, strong, beautiful, resilient, deserving women around the world who have ever been made to feel otherwise... this one's for you." -Sorah</div>
           <div className="video-buttons">
             <button className="play btn-secondary" onClick={this.goToPage(`/videos/${this.props.videos[1].id}`)}>PLAY</button>
             {!this.state.muted && <button className="btn-secondary volume" onClick={this.toggleVolume}><div className='unmuted'></div></button>}

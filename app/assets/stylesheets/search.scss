@@ -2,11 +2,10 @@
 
 
 .search-form {
-  // box-sizing: border-box;
-  color: rgb(249, 249, 249);
-  // color: -internal-light-dark-color(rgb(170, 170, 170));
-  font-family: Avenir-Heavy;
-  font-size: 24px;
+  box-sizing: border-box;
+  // color: rgb(249, 249, 249);
+  font-family: $font-family-heavy;
+  font-size: 34px;
   height: 10vh;
   letter-spacing: 1.17px;
   padding-left: calc(3.5vw + 24px);
@@ -20,11 +19,13 @@
   border-style: none;
   border-color: initial;
   border-image: initial;
-  // outline-offset: -2px;
-  // overflow: visible;
-  // transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  outline-offset: -2px;
+  overflow: visible;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
     &:focus {
       background: rgb(98, 102, 118);
+      // color: rgb(249, 249, 249);
+      color:white;
     }
 }
 
@@ -36,5 +37,6 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 1.23;
-      padding: 65px 0px 0px;
+  padding: 140px 0px 0px;
 }
+

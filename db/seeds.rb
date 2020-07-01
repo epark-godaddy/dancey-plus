@@ -128,7 +128,7 @@ video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/S
 video.image.attach(io: img_file, filename:'this_videos_image.jpg')
 video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
 video.tags << hip_hop_tag
-video.tags << tutorial_tag
+video.tags << class_footage_tag
 #link: https://www.youtube.com/watch?v=qbO1kp3vdGY
 
 
