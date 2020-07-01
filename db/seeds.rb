@@ -1,7 +1,7 @@
 require 'open-uri'
 
 #Demo User
-User.create([{email: 'demo@gmail.com', password: 'password'}])
+User.create([{email: 'demo@gmail.com', password: 'password', name: 'Demo User'}])
 
 # Tag seeds
 hip_hop_tag = Tag.create([{name: 'Hip Hop'}])

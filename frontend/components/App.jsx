@@ -17,6 +17,7 @@ import SearchContainer from "./search/search_container";
 import WatchlistContainer from "./watchlist/watchlist_container";
 import TagContainer from "./tag/tag_container";
 import ProfileContainer from "./profile/profile_container";
+import FooterContainer from "./footer/footer_container";
 
 const App = () => (
   <div>
@@ -36,6 +37,9 @@ const App = () => (
         <ProtectedRoute path="/profile" component={ProfileContainer} />
       </div>
     </Switch>
+
+
+    <FooterContainer />
   </div>
 );
 

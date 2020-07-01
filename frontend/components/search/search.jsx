@@ -33,7 +33,6 @@ class Search extends React.Component {
 
     // find all the tag ids associated with this video
     const tagIds = [];
-    debugger;
     videoTags.forEach(videoTag => {
       if (videoTag.video_id === video.id) {
         tagIds.push(videoTag.tag_id);
