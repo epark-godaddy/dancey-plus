@@ -12,57 +12,92 @@
     margin-bottom: 20px;
 
   .featured-video{
-    // width: 100%;
     height: 75vh;
     margin: 0 calc((3.5vw + 24px) * -1);
     z-index: -2;
     position: relative;
     overflow: hidden;
   
-
-  video {
-    // width: calc(100vw);
-    // height: 56.25vw;
-      // position: absolute;
-      // height: 100%;
-      // width: 100%;
-      // top: 50%;
-      // left: 50%;
-      // top: 0;
-      // // bottom: 50vh;
-      // left:0;
-      // right:0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
+}
+
+.video-buttons-container{
+  top:0;
 
   .video-buttons{
     z-index: 1; 
     position: absolute;
     cursor: pointer;
-    top:25vh;
+    top:45vh;
     bottom:50vh;
     left:0;
     right:0;
-
+    display: flex;
+    align-items: center;
+    height: 100px;
+   
+  
     .play {
       left: 5px;
     }
+
+    .unmuted{
+      background-image: image_url('volume.png');
+      // padding: 3px 30px;
+      width: 30px;
+      height: 34px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      padding: 3px;
+    }
+
+    .muted{
+      background-image: image_url('mute.png');
+      width: 30px;
+      height: 34px;
+      // padding: 3px 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      padding: 3px;
+    }
+    .volume:hover {
+      background-color: black;
+    }
+
+    // .volume {
+    //   display: flex;
+    //   justify-self: center;
+    //   min-width:60px;
+    //   &.btn-secondary {
+    //     width:0;
+    //   }
+    //   &.btn-secondary:hover, &.btn-secondary:hover {
+    //   // border: 3px solid white;
+    //   box-sizing: border-box;
+    //   background-color: transparent;
+    //   // padding: 0 27px;
+    //   .muted, .unmuted {
+    //     padding: 0;
+    //   }
+    // }
+    // }
   }
 }
- 
 
-}
 
 .video-links-container{
-
-
   .tag-buttons {
     display: flex;
     justify-content: space-between;
@@ -90,7 +125,6 @@
       border-image: initial;
       background: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42)) 0% 0% / cover;
       background-image: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
-
 
       video {
         width: 100%;
@@ -129,7 +163,6 @@
         border-image: initial;
       }
     }
-
   }
 
   .tags-container {

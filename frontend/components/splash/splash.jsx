@@ -1,15 +1,14 @@
 import React from 'react';
-// import logo from '../../../app/assets/images/logo.png'
 
-class Splash extends React.Component { 
-  constructor(props) { 
+class Splash extends React.Component {
+  constructor(props) {
     super(props);
   }
 
   goToPage(path) {
-    return () => { 
+    return () => {
       this.props.history.push(path);
-    }   
+    };
   }
 
   render() {
@@ -30,8 +29,8 @@ class Splash extends React.Component {
           </div>
         </div>
       </div>
-    )
-   }
+    );
+  }
 }
 
 export default Splash; 
