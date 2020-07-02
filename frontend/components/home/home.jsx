@@ -36,7 +36,7 @@ class Home extends React.Component {
       <div>
         <div className="video-container">
           <div className="featured-video">
-            <video autoPlay loop src={this.props.videos[1] && this.props.videos[1].video_url + '#t=126,174'} muted={muted}></video>
+            <video autoPlay loop src={this.props.videos[1] && this.props.videos[1].video_url + '#t=127,174.5'} muted={muted}></video>
           </div>
         </div>
         <div className="video-buttons-container">

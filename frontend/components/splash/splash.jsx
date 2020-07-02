@@ -17,8 +17,11 @@ class Splash extends React.Component {
         <div className="spash-container-left">
           <div className="signup-content">
             <div className='logo'></div>
-            <button onClick={this.goToPage('/signup')} className="btn-primary">GET ALL THREE FOR $12.99/MONTH</button>
-            <button onClick={this.goToPage('/signup')} className="subscribe-button">or Subscribe to just Dancey+ for $6.99/month or $69.99/year</button>
+            <button onClick={this.goToPage('/signup')} className="btn-primary">GET DANCEY+ FOR FREE</button>
+            <button onClick={this.goToPage('/signup')} className="subscribe-button">or Subscribe to Dancey+ for $0/month or $0/year</button>
+            <div className="dance-logos">
+              <img className="image" src="https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/dancelogos.png" />
+            </div>
           </div>
         </div>
 

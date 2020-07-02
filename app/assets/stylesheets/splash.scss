@@ -1,3 +1,5 @@
+@import 'variables';
+
 .splash-container {
   background-image: image_url('background-img.jpeg');
   background-size: cover;
@@ -33,6 +35,7 @@
       padding: 0px;
       text-decoration: underline;
       padding-top: 15px;
+      margin: 25px 0;
     }
 
     .logo {
@@ -45,6 +48,17 @@
     
     .btn-primary {
       width: 80%;
+    }
+
+    .dance-logos {
+      display:flex;
+      font-size: 30px;
+      font-family: $font-family-heavy;
+      margin-top: 20px;
+      margin-left: 9px;
+      .image {
+        height: 25px;
+      }
     }
   }
 

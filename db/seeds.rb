@@ -233,5 +233,149 @@ video.tags << class_footage_tag
 
 
 
+video = Video.create(title: "Luca & Alessandra Dance to 'A Evaristo Carriego' by Metropole - World of Dance Qualifiers 2020")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/luca_and_alessandra.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Luca+%26+Alessandra+Dance+to++A+Evaristo+Carriego++by+Metropole+-+World+of+Dance+Qualifiers+2020.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << latin_tag
+video.tags << television_show_tag
+#link: https://www.youtube.com/watch?v=PZPra-7pIvc
+
+video = Video.create(title: "Kayla Mak amazing ballet dancer | World of Dance 2019 - season 3 | Qualifiers")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/WOD-Kayla.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Kayla+Mak+amazing+ballet+dancer+++World+of+Dance+2019+-+season+3+++Qualifiers+Full+Performance.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << ballet_tag
+video.tags << television_show_tag
+#link: https://www.youtube.com/watch?v=5nyk0v5lC-c
+
+video = Video.create(title: "Styles & Emma Dance to 'Someone You Loved' by Lewis Capaldi - World of Dance The Duels 2020")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/styles_and_emma.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Styles+%26+Emma+Dance+to++Someone+You+Loved++by+Lewis+Capaldi+-+World+of+Dance+The+Duels+2020.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << ballet_tag
+video.tags << television_show_tag
+#link: https://www.youtube.com/watch?v=MY3dAQD7-Do
+
+video = Video.create(title: "Dance of the Sugar Plum Fairy from The Nutcracker (The Royal Ballet)")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/nutcracker.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Dance+of+the+Sugar+Plum+Fairy+from+The+Nutcracker+(The+Royal+Ballet).mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << ballet_tag
+video.tags << performance_tag
+#link: https://www.youtube.com/watch?v=zV1qLYukTH8
+
+video = Video.create(title: "SWING LATINO PASA ALA FINAL DEL NBC WORLD OF DANCE")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/swing_latino.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/SWING+LATINO+PASA++ALA+FINAL+DEL+NBC+WORLD+OF+DANCE..mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << latin_tag
+video.tags << television_show_tag
+#link: https://www.youtube.com/watch?v=DzWdsZfAcxY
+
+video = Video.create(title: "How to Salsa: The Basic Salsa Step (Ballroom Dance Moves Tutorial)")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/salsa_tutorial.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/How+to+Salsa+The+Basic+Salsa+Step+(Ballroom+Dance+Moves+Tutorial)+++MihranTV.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << latin_tag
+video.tags << tutorial_tag
+#link: https://www.youtube.com/watch?v=lj_97_Xzl04
+
+video = Video.create(title: "Maddy Penney - World of Dance 2020 Qualifers Full Performance")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/maddy_penney.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Maddy+Penney+-+World+of+Dance+2020+Qualifers+Full+Performance+HD.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << ballet_tag
+video.tags << television_show_tag
+#link: https://www.youtube.com/watch?v=1eHwjjGYZeE
+
+
+video = Video.create(title: "Taylor Swift - Call It What You Want | Choreography With Laura Quinn")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/callitwhatyouwant.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Taylor+Swift+-+Call+It+What+You+Want+++Choreography+With+Laura+Quinn.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << ballet_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=ZLEjsyTvPhI
+
+
+video = Video.create(title: "Beginner Lyrical Dance | @MissAuti")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/lyrical_dance.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Beginner+Lyrical+Dance+I+%40MissAuti.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << lyrical_tag
+video.tags << tutorial_tag
+#link: https://www.youtube.com/watch?v=QmA4DZC_qwY
+
+video = Video.create(title: "Don't Start Now - Dua Lipa | Radix Dance Fix Season 4 | Brian Friedman Choreography")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/dontstartnow.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Don't+Start+Now+-+Dua+Lipa+++Radix+Dance+Fix+Season+4+++Brian+Friedman+Choreography.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << jazz_funk_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=MGRxaF4pHqc
+
+video = Video.create(title: "Låpsley - Station - Sean Lew | Kaycee Rice | Tessandra Chavez")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/station.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/La%CC%8Apsley+-+Station+-+Sean+Lew+++Kaycee+Rice+++Tessandra+Chavez+++Tim+Milgram+-+%23TMillyTV+%23Dance.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << lyrical_tag
+video.tags << concept_video_tag
+#link: https://www.youtube.com/watch?v=4DuNkr3oAEU
+
+
+video = Video.create(title: "Ally Brooke - No Good - Choreography by Jojo Gomez")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/nogood.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Ally+Brooke+-+No+Good+-+Choreography+by+Jojo+Gomez.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << jazz_funk_tag
+video.tags << class_footage_tag
+#link: https://www.youtube.com/watch?v=oIYk3VRqp4U
+
+video = Video.create(title: "Jessie Reyez - Figures - Dance Choreography by Erica Klein")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/figures.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/Jessie+Reyez+-+Figures+-+Dance+Choreography+by+Erica+Klein+-+%23TMillyTV.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << lyrical_tag
+video.tags << concept_video_tag
+#link: https://www.youtube.com/watch?v=s-SadyZbhA4
+
+
+video = Video.create(title: "WSS16 Professional Salsa Cabaret World Champions Ricardo Vega & Karen Forcano")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/ricardovega_karenforcano.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/WSS16+Professional+Salsa+Cabaret+World+Champions+Ricardo+Vega+%26+Karen+Forcano.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << latin_tag
+video.tags << performance_tag
+#link: https://www.youtube.com/watch?v=iXOuzMZ8TtU
+
+
+video = Video.create(title: "SCOTT FORSYTH | Hit The Floor Toronto")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/scottforsyth.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/SCOTT+FORSYTH+++Hit+The+Floor+Toronto+%23HTF2017.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << hip_hop_tag
+video.tags << performance_tag
+#link: https://www.youtube.com/watch?v=R4A9_7eU3Y4
+
+
+
+
+
 
 
