@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Dancey+
 
-Things you may want to cover:
+## Table of Contents
+* Introduction
+* Technologies
+* Features
 
-* Ruby version
+## Introduction
+Welcome to Dancey+, a single page web application based on Disney+ and Netflix. Dancey+ allows registered users to browse dance-related videos and search for videos based on dance genre (Hip Hop, Ballet, Latin, Jazz-Funk, or Lyrical) and video category (performance, class footage, television show, concept video, or tutorial). 
 
-* System dependencies
+## Technologies
+* Ruby On Rails
+* React / Redux
+* AWS S3
+* PostgreSQL
+* Heroku
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Features

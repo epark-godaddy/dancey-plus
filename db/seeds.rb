@@ -161,6 +161,25 @@ video.tags << concept_video_tag
 #link: https://www.youtube.com/watch?v=K_KcCCHCwJU
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 video = Video.create(title: "James Arthur - Recovery - Janelle Ginestra x Tim Milgram")
 img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/recovery.jpg")
 video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/James+Arthur+-+Recovery+-+Janelle+Ginestra+x+Tim+Milgram+-+%23Dance+%23TMillyTV.mp4")
@@ -363,6 +382,15 @@ video.tags << latin_tag
 video.tags << performance_tag
 #link: https://www.youtube.com/watch?v=iXOuzMZ8TtU
 
+
+video = Video.create(title: "SCOTT FORSYTH | Hit The Floor Toronto")
+img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/scottforsyth.jpg")
+video_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/videos/SCOTT+FORSYTH+++Hit+The+Floor+Toronto+%23HTF2017.mp4")
+video.image.attach(io: img_file, filename:'this_videos_image.jpg')
+video.video.attach(io: video_file, filename: 'this_videos_video.mp4')
+video.tags << hip_hop_tag
+video.tags << performance_tag
+#link: https://www.youtube.com/watch?v=R4A9_7eU3Y4
 
 video = Video.create(title: "SCOTT FORSYTH | Hit The Floor Toronto")
 img_file = open("https://dancey-plus-seeds.s3-us-west-1.amazonaws.com/images/scottforsyth.jpg")
