@@ -25,11 +25,12 @@ class Api::UserSavedVideosController < ApplicationController
   # POST /user_saved_videos.json
   def create
     @user_saved_video = UserSavedVideo.new(user_saved_video_params)
+    @user_saved_video.user_id = current_user.id
 
     respond_to do |format|
       if @user_saved_video.save
         format.html { redirect_to @user_saved_video, notice: 'User saved video was successfully created.' }
-        format.json { render :show, status: :created, location: @user_saved_video }
+        format.json { render :show, status: :created }
       else
         format.html { render :new }
         format.json { render json: @user_saved_video.errors, status: :unprocessable_entity }

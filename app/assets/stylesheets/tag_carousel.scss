@@ -1,16 +1,17 @@
 @import "variables";
-  .right-button, .left-button {
-    opacity: 0;
-    position: absolute;
-    background-color: transparent;
-    align-self: center;
-    cursor: pointer;
-    width: calc(3.5vw + 24px);
-    z-index: 100;
-    &:hover {
-      opacity: 1;
-    }
+.right-button,
+.left-button {
+  opacity: 0;
+  position: absolute;
+  background-color: transparent;
+  align-self: center;
+  cursor: pointer;
+  width: calc(3.5vw + 24px);
+  z-index: 100;
+  &:hover {
+    opacity: 1;
   }
+}
 .tag-carousel-container {
   .tag-name {
     font-family: $font-family-heavy;
@@ -23,23 +24,24 @@
 
   .carousel-container {
     display: flex;
-      &:hover {
-        .right-button, .left-button {
-          visibility: visible;
-        }
+    &:hover {
+      .right-button,
+      .left-button {
+        visibility: visible;
       }
+    }
 
-    .right-button{
+    .right-button {
       right: 0;
     }
     .left-button {
-      display:flex;
+      display: flex;
       justify-content: flex-end;
       left: 0;
     }
   }
-  .images-container{
-    display: flex; 
+  .images-container {
+    display: flex;
     width: 100%;
     // overflow-x: hidden;
     padding-top: 4px;
@@ -48,16 +50,10 @@
     .inner-container {
       display: flex;
       position: relative;
-      // justify-content: space-between;
       transition: left 1s ease 0s;
-      // transition-property: opacity;
-      // transition-duration: 0.2s;
-      // transition-timing-function: ease;
-      // transition-delay: 0s;
     }
-    
+
     .video-link {
-      // min-width: 300px;
       margin: 0px 5px;
       padding: 4px;
       width: 17%;
@@ -66,9 +62,7 @@
         box-sizing: border-box;
         object-fit: cover;
         width: 100%;
-        // max-height: 172px;
         backface-visibility: hidden;
-        // box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
         cursor: pointer;
         display: block;
         position: relative;
@@ -84,8 +78,10 @@
         border-image: initial;
 
         &:hover {
-          box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px, rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
-          transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+          box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
+            rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+          transform: scale(1.05, 1.05) translateZ(0px)
+            translate3d(0px, 0px, 0px);
           transition-duration: 300ms;
           transition-property: transform, box-shadow;
           transition-timing-function: ease-out;
@@ -97,8 +93,4 @@
       }
     }
   }
-
-
-
-
 }

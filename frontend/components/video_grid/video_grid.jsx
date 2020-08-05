@@ -1,17 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import ThumbnailContainer from "../thumbnail/thumbnail_container";
 
 class VideoGrid extends React.Component {
-
-
   render() {
-    if (!this.props.videos) return <div>no videos</div>;
+    if (!this.props.videos) return <div></div>;
     return (
-      <div className='video-grid'>
-        {this.props.videos.map(video => (
-          <Link key={video.id} className="video-link" to={`/videos/${video.id}`}>
-            <img className="image" src={video.image_url} key={video.id} />
-          </Link>
+      <div className="video-grid">
+        {this.props.videos.map((video) => (
+          <ThumbnailContainer video={video} />
         ))}
       </div>
     );

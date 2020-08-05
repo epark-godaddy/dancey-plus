@@ -1,11 +1,16 @@
-import React from 'react';
-
+import React from "react";
+import VideoGridContainer from "../video_grid/video_grid_container";
 
 class Watchlist extends React.Component {
+  componentDidMount() {
+    this.props.fetchWatchlistVideos();
+  }
   render() {
+    const { videos } = this.props;
     return (
-      <div>
-
+      <div className="results">
+        <h1 className="explore-header">Watchlist</h1>
+        <VideoGridContainer videos={videos} />
       </div>
     );
   }

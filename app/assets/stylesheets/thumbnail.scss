@@ -1,0 +1,21 @@
+.thumbnail-container {
+  width: 18%;
+  margin: 20px 0px 0px 20px;
+  position: relative;
+  &:hover svg {
+    visibility: visible;
+  }
+  svg {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    border: 1px solid white;
+    border-radius: 12px;
+    visibility: hidden;
+    cursor: pointer;
+  }
+}
+.tag-carousel-container .thumbnail-container svg {
+  bottom: 16%;
+  right: 2%;
+}

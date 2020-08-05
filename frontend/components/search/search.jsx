@@ -1,13 +1,11 @@
-
-import React from 'react';
-import VideoGridContainer from '../video_grid/video_grid_container';
-
+import React from "react";
+import VideoGridContainer from "../video_grid/video_grid_container";
 
 class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      query: '',
+      query: "",
       results: this.props.videos,
     };
 
@@ -21,35 +19,35 @@ class Search extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-
     // when there were no videos, now there are videos, set the state
-    if (prevProps.videos.length <= 1 && this.props.videos.length > 1) this.setState({ results: this.props.videos });
+    if (prevProps.videos.length <= 1 && this.props.videos.length > 1)
+      this.setState({ results: this.props.videos });
   }
 
   getTagNamesFromVideo(video) {
     const { tags, videoTags } = this.props;
-    // tags => [{ id: 1, name: 'Hip Hop'}, etc]
-    // videoTags => [{ id: 1, tag_id: 1, video_id: 1}, { id: 2, tag_id: 1, video_id: 2}, { id: 3, tag_id: 1, video_id: 3}, { id: 3, tag_id: 6, video_id: 1}]
 
     // find all the tag ids associated with this video
     const tagIds = [];
-    videoTags.forEach(videoTag => {
+    videoTags.forEach((videoTag) => {
       if (videoTag.video_id === video.id) {
         tagIds.push(videoTag.tag_id);
       }
     });
 
-    const tagNames = tagIds.map(tagId => {
-      const tag = tags.find(tag => tag.id === tagId);
+    const tagNames = tagIds.map((tagId) => {
+      const tag = tags.find((tag) => tag.id === tagId);
       return tag.name;
     });
 
-    return tagNames; // ["Hip Hop", "Movies"]
+    return tagNames;
   }
 
   hasTagNameThatMatchesQuery(video, query) {
     const tagNames = this.getTagNamesFromVideo(video);
-    return tagNames.some(tagName => tagName.toLowerCase().includes(query.toLowerCase()));
+    return tagNames.some((tagName) =>
+      tagName.toLowerCase().includes(query.toLowerCase())
+    );
   }
 
   hasTitleThatMatchesQuery(video, query) {
@@ -57,17 +55,25 @@ class Search extends React.Component {
   }
 
   setResults(query) {
-    const results = this.props.videos.filter(video => {
-      return this.hasTitleThatMatchesQuery(video, query) || this.hasTagNameThatMatchesQuery(video, query);
+    const start = new Date().getTime();
+    const results = this.props.videos.filter((video) => {
+      return (
+        this.hasTitleThatMatchesQuery(video, query) ||
+        this.hasTagNameThatMatchesQuery(video, query)
+      );
     });
     this.setState({ results: results });
+    const end = new Date().getTime();
+    console.log(end - start);
+    console.log(end);
+    console.log(start);
   }
 
   handleChange(event) {
     const query = event.target.value;
-    this.setState({ query, loading: true, message: '' });
+    this.setState({ query, loading: true, message: "" });
     this.setResults(query);
-  };
+  }
 
   render() {
     const { query, results } = this.state;
