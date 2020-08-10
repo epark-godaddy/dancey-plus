@@ -13,7 +13,11 @@ const userSavedVideosReducer = (state = {}, action) => {
       return action.watchlistVideos;
     case REMOVE_WATCHLIST_VIDEO:
       const newState = { ...state };
-      delete newState[action.videoId];
+      Object.values(newState).forEach((userSavedVideo) => {
+        if (action.videoId === userSavedVideo.video_id) {
+          delete newState[userSavedVideo.id];
+        }
+      });
       return newState;
     default:
       return state;

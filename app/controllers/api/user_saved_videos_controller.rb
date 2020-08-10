@@ -1,5 +1,5 @@
 class Api::UserSavedVideosController < ApplicationController
-  before_action :set_user_saved_video, only: [:show, :edit, :update, :destroy]
+  before_action :set_user_saved_video, only: [:show, :edit, :update]
 
   # GET /user_saved_videos
   # GET /user_saved_videos.json
@@ -55,6 +55,11 @@ class Api::UserSavedVideosController < ApplicationController
   # DELETE /user_saved_videos/1
   # DELETE /user_saved_videos/1.json
   def destroy
+    # find_by(video_id: 1, user_id: 2)
+    @user_saved_video = UserSavedVideo.find_by(
+      video_id: params[:user_saved_video][:video_id], 
+      user_id: current_user.id
+    )
     @user_saved_video.destroy
     respond_to do |format|
       format.html { redirect_to user_saved_videos_url, notice: 'User saved video was successfully destroyed.' }

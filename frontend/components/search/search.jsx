@@ -16,6 +16,7 @@ class Search extends React.Component {
     this.props.fetchTags();
     this.props.fetchVideos();
     this.props.fetchVideoTags();
+    this.props.fetchWatchlistVideos();
   }
 
   componentDidUpdate(prevProps) {

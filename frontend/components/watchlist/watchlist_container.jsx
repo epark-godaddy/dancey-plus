@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import Watchlist from "./watchlist";
 import { fetchWatchlistVideos } from "../../actions/watchlist_actions";
+import { fetchVideos } from "../../actions/video_actions";
 
 const getVideosFromUserSavedVideos = (state) => {
   const userSavedVideoIds = Object.values(state.entities.userSavedVideos).map(
@@ -18,6 +19,7 @@ const mSTP = (state) => ({
 
 const mDTP = (dispatch) => ({
   fetchWatchlistVideos: () => dispatch(fetchWatchlistVideos()),
+  fetchVideos: () => dispatch(fetchVideos()),
 });
 
 export default connect(mSTP, mDTP)(Watchlist);

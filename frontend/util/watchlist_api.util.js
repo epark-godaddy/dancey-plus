@@ -9,6 +9,7 @@ export const removeVideoFromWatchlist = (videoId) =>
   $.ajax({
     method: "DELETE",
     url: `/api/user_saved_videos/${videoId}`,
+    data: { user_saved_video: { video_id: videoId } },
   });
 
 export const fetchWatchlistVideos = () =>
